@@ -38,6 +38,10 @@ int main(){
 	int_vector_pop_back(v);
 	printf("pop size: %ld capacity: %ld elem:  %d \n", v->size, v->capacity, v->data[v->size-1]);	
 
+	int_vector_shrink_to_fit(v);
+	printf("pop size: %ld capacity: %ld elem:  %d \n", v->size, v->capacity, v->data[v->size-1]);	
+
+
 return 0;
 }
 

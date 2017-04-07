@@ -84,3 +84,15 @@ void int_vector_pop_back(IntVector *v){
 	}
 	}
 }
+
+int int_vector_shrink_to_fit(IntVector *v){
+	if (v){
+	if (v->capacity > v->size){
+		v->capacity = v->size;
+		v->data = realloc(v->data, (sizeof(int) * v->capacity));
+		if (v->data == NULL)
+		return -1;
+		}
+	}
+	return 0;
+}
