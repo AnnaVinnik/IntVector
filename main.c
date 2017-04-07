@@ -12,6 +12,10 @@ int main(){
 
 	int_vector_free(m);
 
+        int two = int_vector_get_item(v, 2);
+	printf("two: %d \n", two);
+	
+
 return 0;
 }
 

@@ -37,3 +37,11 @@ void int_vector_free(IntVector *v){
 	}
 	
 }
+
+int int_vector_get_item(const IntVector *v, size_t index){
+	if (v){
+	if (v->capacity > index)
+		return v->data[index];
+	}
+	return 0;
+}
