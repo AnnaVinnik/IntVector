@@ -45,3 +45,11 @@ int int_vector_get_item(const IntVector *v, size_t index){
 	}
 	return 0;
 }
+
+void int_vector_set_item(IntVector *v, size_t index, int item){
+        if (v){
+        if (v->capacity > index){
+                v->data[index] = item;
+        }
+}
+}

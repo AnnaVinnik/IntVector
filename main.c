@@ -11,10 +11,11 @@ int main(){
 	printf("v: %ld \n", v->capacity);
 
 	int_vector_free(m);
+	
+        int_vector_set_item(v, 2, 5);
 
         int two = int_vector_get_item(v, 2);
-	printf("two: %d \n", two);
-	
+        printf("two: %d \n", two);
 
 return 0;
 }
