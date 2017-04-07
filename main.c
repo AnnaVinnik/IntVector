@@ -42,8 +42,10 @@ int main(){
 	printf("shrink: %ld capacity: %ld elem:  %d \n", v->size, v->capacity, v->data[v->size-1]);	
 
 	int_vector_resize(v, 4);
-	printf("resize: %ld capacity: %ld elem:  %d \n", v->size, v->capacity, v->data[v->size-1]);	
-
+	printf("resize: %ld capacity: %ld elem:  %d \n", v->size, v->capacity, v->data[v->size-1]);
+	
+	int_vector_reserve(v, 10);	
+	printf("reserve: %ld capacity: %ld elem:  %d \n", v->size, v->capacity, v->data[v->size-1]);
 
 return 0;
 }
