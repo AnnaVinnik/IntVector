@@ -29,7 +29,7 @@ int main(){
 	int_vector_push_back(v, 6);
 	printf("push size: %ld capacity: %ld elem:  %d \n", v->size, v->capacity, v->data[1]);
 
-	int_vector_push_back(v, 3);
+	int_vector_push_back(v, 4);
 	printf("push size: %ld capacity: %ld elem:  %d \n", v->size, v->capacity, v->data[v->size-1]);
 
 	int_vector_push_back(v, 1);
@@ -39,7 +39,10 @@ int main(){
 	printf("pop size: %ld capacity: %ld elem:  %d \n", v->size, v->capacity, v->data[v->size-1]);	
 
 	int_vector_shrink_to_fit(v);
-	printf("pop size: %ld capacity: %ld elem:  %d \n", v->size, v->capacity, v->data[v->size-1]);	
+	printf("shrink: %ld capacity: %ld elem:  %d \n", v->size, v->capacity, v->data[v->size-1]);	
+
+	int_vector_resize(v, 4);
+	printf("resize: %ld capacity: %ld elem:  %d \n", v->size, v->capacity, v->data[v->size-1]);	
 
 
 return 0;
