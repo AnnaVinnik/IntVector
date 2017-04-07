@@ -17,6 +17,9 @@ int main(){
         int two = int_vector_get_item(v, 2);
         printf("two: %d \n", two);
 
+	size_t size = int_vector_get_size(v);
+	printf("size: %ld \n", size);
+
 return 0;
 }
 

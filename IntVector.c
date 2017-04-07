@@ -53,3 +53,10 @@ void int_vector_set_item(IntVector *v, size_t index, int item){
         }
 }
 }
+
+size_t int_vector_get_size(const IntVector *v){
+        if (v) 
+	return v->size;
+
+}
+
