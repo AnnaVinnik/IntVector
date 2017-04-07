@@ -16,5 +16,16 @@ IntVector *int_vector_new(size_t initial_capacity) {
 	temp->capacity = initial_capacity;
 	temp->size = 0;
 
-return temp;
+	return temp;
+}
+
+IntVector *int_vector_copy(const IntVector *v){
+	IntVector *temp = int_vector_new(v->capacity);
+	
+	temp->capacity = v->capacity;
+	temp->size = v->size;
+	temp->data = temp->data;
+
+	return temp;
+
 }
