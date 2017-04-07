@@ -24,19 +24,19 @@ int main(){
 	printf("capacity: %ld \n", cap);
 	
 	int_vector_push_back(v, 3);
-	printf("push size: %ld capacity: %ld elem:  %d \n", v->size, v->capacity, v->data[size]);
+	printf("push size: %ld capacity: %ld elem:  %d \n", v->size, v->capacity, int_vector_get_item(v, 0));
 	
 	int_vector_push_back(v, 6);
-	printf("push size: %ld capacity: %ld elem:  %d \n", v->size, v->capacity, v->data[size]);
+	printf("push size: %ld capacity: %ld elem:  %d \n", v->size, v->capacity, v->data[1]);
 
 	int_vector_push_back(v, 3);
-	printf("push size: %ld capacity: %ld elem:  %d \n", v->size, v->capacity, v->data[size]);
+	printf("push size: %ld capacity: %ld elem:  %d \n", v->size, v->capacity, v->data[v->size-1]);
 
 	int_vector_push_back(v, 1);
-	printf("push size: %ld capacity: %ld elem:  %d \n", v->size, v->capacity, v->data[size]);
+	printf("push size: %ld capacity: %ld elem:  %d \n", v->size, v->capacity, v->data[v->size-1]);
 	
 	int_vector_pop_back(v);
-	printf("pop size: %ld capacity: %ld elem:  %d \n", v->size, v->capacity, v->data[size]);	
+	printf("pop size: %ld capacity: %ld elem:  %d \n", v->size, v->capacity, v->data[v->size-1]);	
 
 return 0;
 }

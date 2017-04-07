@@ -69,7 +69,7 @@ int int_vector_push_back(IntVector *v, int item){
 	if (v){
 	if (v->size == v->capacity){
 		v->capacity = v->capacity*2;
-		v->data = realloc(v->data, (sizeof(int)*v->capacity));
+		v->data = realloc(v->data, (sizeof(int) * v->capacity));
 		}
 	v->data[v->size] = item;
 	v->size = v->size + 1;
