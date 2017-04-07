@@ -29,3 +29,11 @@ IntVector *int_vector_copy(const IntVector *v){
 	return temp;
 
 }
+
+void int_vector_free(IntVector *v){
+	if (v){
+	free(v->data);
+	free(v);
+	}
+	
+}

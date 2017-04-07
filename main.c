@@ -5,12 +5,13 @@
 
 int main(){
 	IntVector *m = int_vector_new(3);
-	printf("%ld m: \n", m->capacity);
-	printf("%d m: \n", m->data);
+	printf("m: %ld \n", m->capacity);
 
 	IntVector *v = int_vector_copy(m);
-	printf("%ld v: \n", v->capacity);
-	printf("%d v: \n", v->data);
+	printf("v: %ld \n", v->capacity);
+
+	int_vector_free(m);
+
 return 0;
 }
 

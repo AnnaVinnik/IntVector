@@ -9,5 +9,5 @@ typedef struct{
 
 IntVector *int_vector_new(size_t initial_capacity);
 IntVector *int_vector_copy(const IntVector *v);
-
+void int_vector_free(IntVector *v);
 #endif
