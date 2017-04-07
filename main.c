@@ -20,6 +20,9 @@ int main(){
 	size_t size = int_vector_get_size(v);
 	printf("size: %ld \n", size);
 
+	size_t cap = int_vector_get_capacity(v);
+	printf("capacity: %ld \n", cap);
+
 return 0;
 }
 
