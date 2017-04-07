@@ -23,7 +23,7 @@ int main(){
 	size_t cap = int_vector_get_capacity(v);
 	printf("capacity: %ld \n", cap);
 	
-	int_vector_push_back(v, 5);
+	int_vector_push_back(v, 3);
 	printf("push size: %ld capacity: %ld elem:  %d \n", v->size, v->capacity, v->data[size]);
 	
 	int_vector_push_back(v, 6);
@@ -35,6 +35,8 @@ int main(){
 	int_vector_push_back(v, 1);
 	printf("push size: %ld capacity: %ld elem:  %d \n", v->size, v->capacity, v->data[size]);
 	
+	int_vector_pop_back(v);
+	printf("pop size: %ld capacity: %ld elem:  %d \n", v->size, v->capacity, v->data[size]);	
 
 return 0;
 }

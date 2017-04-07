@@ -76,3 +76,11 @@ int int_vector_push_back(IntVector *v, int item){
 	}
 return 0;
 }
+
+void int_vector_pop_back(IntVector *v){
+	if (v){
+	if (v->size > 0){
+	v->size = v->size - 1;
+	}
+	}
+}
